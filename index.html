@@ -55,15 +55,6 @@
       background-size: cover;
       background-position: center;
     }
-
-    /* CSS styles for the stars */
-    .star {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      transition: background-color 0.3s;
-    }
   </style>
   <title>Jahari's Web Portfolio</title>
 </head>
@@ -86,34 +77,5 @@
       </div>
     </footer>
   </div>
-
-  <script>
-    // JavaScript code for star animation
-    const container = document.querySelector('.content');
-
-    // Create stars and add them to the container
-    function createStars() {
-      const numStars = 30;
-      for (let i = 0; i < numStars; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
-        container.appendChild(star);
-      }
-    }
-
-    // Move stars based on mouse position
-    function moveStars(event) {
-      const stars = document.querySelectorAll('.star');
-      const mouseX = event.clientX;
-      const mouseY = event.clientY;
-
-      stars.forEach((star) => {
-        const starX = star.getBoundingClientRect().left;
-        const starY = star.getBoundingClientRect().top;
-
-        const dx = mouseX - starX;
-        const dy = mouseY - starY;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        // Adjust star color based on distance
-       
+</body>
+</html>
