@@ -2,83 +2,79 @@
 <html>
 <head>
   <style>
-    .center {
-      text-align: center;
+    * {
+      box-sizing: border-box;
     }
-    .header {
-      background-color: #ADD8E6;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .header h1 {
-      font-size: 40px;
-      color: #000;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0;
-    }
-    
-    .header p {
-      font-size: 18px;
-      color: #000; /* Change to black */
-      margin: 10px 0;
-    }
-    html, body {
-      height: 100%;
+
+    body {
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #E13A3E;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: #fff;
+      font-size: 40px;
+      margin: 0;
+      padding: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      color: #fff;
+      font-size: 18px;
+      margin: 10px 0;
     }
 
     .content {
-      flex: 1;
-      background-color: #f2f2f2;
-      position: relative; /* Add this line */
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
     }
 
-    footer {
-      background-color: #f2f2f2;
+    .content p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      background-color: #333;
       padding: 20px;
       text-align: center;
-      margin-top: auto; /* Add this line */
-      border-top: 1px solid #000; /* Add this line for the footer border */
+      color: #fff;
     }
 
-body {
-  background-image: url('picture.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
 
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
   </style>
   <title>Jahari's Web Portfolio</title>
 </head>
 <body>
   <div class="container">
-    <div class="center header">
-      <h1>Welcome to My Simple Web porfolio!</h1>
+    <div class="header">
+      <h1>Welcome to My Simple Web Portfolio!</h1>
       <p>Webpage for Jahari Onyango</p>
-      <p>Check me out on Instagram <a href="https://www.instagram.com/jah_da_maker/"> @Jahari's instagram</a></p>
-      <a href="/work.html">Click to look at my websites!</a>
-    </div>
-    
-    <main class="content">
-    </main>
-    
-    <footer>
-      <div class="content">
-        <p>This is a work in progress and still under construction.</p>
-        <p>© 2023 My Website. All rights reserved.</p>
-        <p>Check out my other websites: <a href="https://manage.wix.com/dashboard/ea4b4ddf-e5ac-4f22-ad18-a69cd28124e8/home?referralInfo=my-sites">Jah's Creative Portfolio</a></p>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+      <p>Check me out on Instagram <a href="https://www.instagram.com/jah_da_maker/">@Jahari's Instagram</a></p>
+      <a href="/work
