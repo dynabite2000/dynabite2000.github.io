@@ -7,6 +7,9 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .center {
@@ -33,28 +36,19 @@
       margin: 10px 0;
     }
 
-    .coaching-box {
+    .coaching-box,
+    .game-box {
       background-color: #FF9999;
       padding: 20px;
       border: 2px solid #ffffff;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 40px;
-      float: left;
-      width: calc(50% - 30px);
-      clear: both;
-    }
-
-    .game-box {
-      background-color: #FFCCCC;
-      padding: 20px;
-      border: 2px solid #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 40px;
-      float: left;
-      width: calc(50% - 30px);
-      clear: both;
+      margin-bottom: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .coaching-box h1,
@@ -88,6 +82,7 @@
       padding: 20px;
       text-align: center;
       color: #ffffff;
+      margin-top: auto;
     }
   </style>
   <title>Jahari's Webpage</title>
@@ -98,14 +93,14 @@
     <p>Check out the coaching resources and games I've created. Still a work in progress.</p>
   </div>
 
-  <div class="center coaching-box">
+  <div class="coaching-box">
     <h1>Coaching Resources I Created</h1>
     <p>Resource 1 - <a href="https://dynabite2000.github.io/dynabite2000rugby/">Learn about rugby fundamentals</a></p>
     <p>Resource 2 - <a href="https://dynabite2000.github.io/basketball/">Learn about basketball fundamentals</a></p>
     <p>Resource 3 - <a href="https://dynabite2000.github.io/volleyballsite/">Learn about volleyball fundamentals</a></p>
   </div>
 
-  <div class="center game-box">
+  <div class="game-box">
     <h1>Games I've Made</h1>
     <p>Game 1 - <a href="https://dynabite2000.github.io/player1/">Guess the Number</a></p>
     <p>Game 2 - <a href="https://dynabite2000.github.io/player2/">Math game :)</a></p>
