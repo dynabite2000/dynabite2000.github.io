@@ -1,136 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .header {
-      background-color: #E13A3E;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .header h1 {
-      color: #fff;
-      font-size: 40px;
-      margin: 0;
-      padding: 10px 0;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .header p {
-      color: #000;
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    .footer {
-      background-color: #333;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    .footer p {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .heading-box {
-      background-color: #E13A3E;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .heading-box h1 {
-      color: #fff;
-      font-size: 40px;
-      margin: 0;
-      padding: 10px 0;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    /* Additional Styles */
-
-    .box {
-      display: none;
-    }
-
-    .navigation {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .navigation a {
-      display: inline-block;
-      margin: 0 10px;
-      color: #E13A3E;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .box a {
-      color: #E13A3E;
-      text-decoration: none;
-    }
-  </style>
-  <title>Jahari's Web Portfolio</title>
+  <title>Horror Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="heading-box">
-      <h1>WELCOME TO MY WEB PORTFOLIO!</h1>
+    <h1>Horror Game</h1>
+    <div id="inventory">
+      <h2>Inventory</h2>
+      <ul id="inventory-list"></ul>
     </div>
-
-    <div class="navigation">
-      <a href="#websites">My Websites</a>
-      <a href="#instagram">My Instagram</a>
-    </div>
-
-    <div class="box" id="websites">
-      <h2>My Websites</h2>
-      <p>This section showcases my websites.</p>
-      <p>Here, you can find links to my various web projects.</p>
-      <a href="/work.html">Click to explore my websites!</a>
-    </div>
-
-    <div class="box" id="instagram">
-      <h2>My Instagram</h2>
-      <p>This section highlights my presence on Instagram.</p>
-      <p>Check out my latest posts and updates on Instagram.</p>
-      <a href="https://www.instagram.com/jah_da_maker/">Visit my Instagram profile!</a>
-    </div>
-
-    <div class="footer">
-      <p>© 2023 My Website. All rights reserved.</p>
+    <p id="story"></p>
+    <div id="options"></div>
+    <div id="buttonContainer">
+      <button id="startButton" onclick="startGame()">Start</button>
+      <button id="submitButton" onclick="selectOption()" style="display: none;">Submit</button>
+      <button id="nextButton" onclick="nextSituation()" style="display: none;">Next</button>
+      <button id="restartButton" onclick="restartGame()" style="display: none;">Restart</button>
     </div>
   </div>
+
+  <audio id="backgroundMusic" src="music.mp3" loop></audio>
+  <script src="game.js"></script>
+  <script>
+    // ...existing code...
+  </script>
 </body>
 </html>
